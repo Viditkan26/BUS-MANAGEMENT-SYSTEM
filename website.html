@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE</title>
+</head>
+<body>
+    <div class="box">
+        <div class="container">
+            <div class="top-header">
+                <header>LOGIN</header>
+            </div>
+            <br>
+            <div class="input-field">
+                <input id="username" type="text" class="input" placeholder="Email or Username" required >
+                <!-- <i class="bx bx-user"></i> -->
+            </div>
+            <br>
+            <div class="input-field">
+                <input id="password" type="password" class="input" placeholder="password">
+                <!-- <i class="bx bx-lock-alt"></i> -->
+                <!-- <img src="eyec.png" id="img"> -->
+            
+            <div class="bottom">
+                <div class="left">
+                    <input onclick="showpass()" type="checkbox" id="check">
+                    <label onclick="showpass()" form="checkbox">Show password</label>
+                    </div>
+                <div class="right">
+                    <label><a href="#">Forgot Password?</a></label>
+                </div>
+            </div>
+                <em><div id="wrongpassord" hidden style=" color: red; font-family: 'Times New Roman', Times, serif; font-size: 15px; ">*WRONG USERNAME OR PASSWORD</div></em>
+                <br id="brwp">
+                <div class="input-field">
+                    <input id="submit" type="submit" class="submit" value="Login" onclick="validation()">
+            </div>
+
+
+                <!-- <box-icon type='logo' name='google'></box-icon>
+                <box-icon type='logo' name='facebook-square'></box-icon>
+                <box-icon type='logo' name='twitter'></box-icon> -->
+
+                <script src="script.js"></script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
